@@ -1,0 +1,101 @@
+/* Header */
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+#titre
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#reservia
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#reservia img
+{
+    width: 80px;
+    height: 60px;
+    
+}
+
+#reservia nav
+{
+    margin-left: 70%;
+}
+
+header h1
+{
+    
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+    
+}
+
+header h2
+{
+    
+    font-size: 0.9em;
+    margin-top: 0px;
+    margin:10px;
+    font-weight: normal;
+    
+}
+#moteur input
+{
+    margin:10px ;
+    padding: 0px;
+
+}
+#bouton
+{
+    background-color:blue;
+    color: white;
+}
+
+
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav li
+{
+    margin-right: 20px;
+    
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+    
+}
+
+nav a:hover
+{
+    color: #760001;
+    border-top: 3px solid blue;
+    
+}
+header nav{
+    margin: 0 0 0 -25px;
+}
