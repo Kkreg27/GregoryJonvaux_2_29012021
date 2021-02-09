@@ -18,7 +18,8 @@ header
 #reservia
 {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    
     
 }
 
@@ -29,11 +30,12 @@ header
     margin-left: 10px;
     
 }
-
+/*
 #reservia nav
 {
     margin-left: 70%;
 }
+*/
 
 header h1
 {
@@ -82,15 +84,13 @@ header h2
 
 
 
-/* Navigation */
-
+/*Navigation *******************/
 nav ul
 {
     list-style-type: none;
     display: flex;
     
 }
-
 nav li
 {
     margin-right: 20px;
@@ -100,67 +100,54 @@ nav li
 {
     text-decoration: none;
     font-size: 1.3em;
+    color: black;
 
 }
-.Hébergements
+#reservia a:hover
 {
-    color: #0065fc;
+    color:#0065fc;
+    border-top: #0065fc solid 1px;
 }
-.Activtés
-{
-    color: black;
-}
+
 .Sinscrire
 {
     color: #0065fc;
 }
 
-.fa-money-bill-wave
-{
-    border: 1px solid #0065fc;
-    color: #0065FC;
-    background: #DEEBFF; 
-        border-radius: 50%;
-        align-items: center;
-        vertical-align: middle;
-        padding: 10px;
-}
-.fa-child
-{
-    border: 1px solid #0065fc;
-    color: #0065FC;
-    background: #DEEBFF; 
-        border-radius: 50%;
-        align-items: center;
-        vertical-align: middle;
-        padding: 10px;
-}
-.fa-heart
-{
-    border: 1px solid #0065fc;
-    color: #0065FC;
-    background: #DEEBFF; 
-        border-radius: 50%;
-        align-items: center;
-        vertical-align: middle;
-        padding: 10px;
+/***********************************/
 
-}
-.fa-dog
+
+
+
+/*filtres*********************/
+.FiltersPart
 {
-border: 1px solid #0065fc;
-color: #0065FC;
-background: #DEEBFF; 
-    border-radius: 50%;
+    display: flex;
     align-items: center;
-    vertical-align: middle;
-    padding: 10px;
 }
-a:link
+.filters
 {
-    text-decoration: none ; 
+    display: flex;
+    margin: 20px 0;
 }
-.Economique
+.filter
 {
-    border: 1px solid #0065FC;
+    display: flex;
+    align-items: center;
+    border: solid 2px red;
+    border-radius: 50%;
+    height: 70px;
+    width: 200px;
 }
+
+.circle
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+}
+/*****************************/
