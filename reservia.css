@@ -18,6 +18,7 @@ header
 #reservia
 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     
     
@@ -129,15 +130,17 @@ nav li
 {
     display: flex;
     margin: 20px 0;
+    
 }
 .filter
 {
     display: flex;
     align-items: center;
     border: solid 2px red;
-    border-radius: 50%;
-    height: 70px;
-    width: 200px;
+    width: 220px;
+    height: 55px;
+    border-radius: 35px;
+
 }
 
 .circle
@@ -151,3 +154,12 @@ nav li
     background-color: #f2f2f2;
 }
 /*****************************/
+
+@media all and (max-width:768px) {
+    #reservia {
+        flex-direction: column;
+        
+    }
+
+
+}
