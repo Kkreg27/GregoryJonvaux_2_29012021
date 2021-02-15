@@ -1,0 +1,24 @@
+/***********HEADER*********/
+#logo_menu {
+  display: flex;
+}
+#menu li {
+  display: flex;
+}
+#slogan {
+}
+#recherche {
+}
+.filtres_prefere {
+  display: flex;
+}
+.filtres {
+  display: flex;
+}
+.info {
+  display: flex;
+}
+
+/***********SECTION*********/
+
+/***********FOOTER*********/
