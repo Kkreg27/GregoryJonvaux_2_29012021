@@ -1,24 +1,77 @@
+/**********BODY*************/
+* {
+  font-family: "Roboto";
+}
+
 /***********HEADER*********/
+header {
+  padding-left: 10px;
+}
+
+/*****logo_menu*********************************/
 #logo_menu {
   display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
-#menu li {
+.logo {
+  width: 8%;
+  height: 8%;
+}
+.menu {
   display: flex;
+  list-style-type: none;
 }
-#slogan {
+.menu a {
+  margin-right: 50px;
+  text-decoration: none;
+  padding: 20px;
 }
-#recherche {
+a:visited {
+  color: black;
 }
+.ha:hover {
+  color: #0065fc;
+  border-top: #0065fc solid 2px;
+}
+.Sinscrire {
+  color: #0065fc;
+  font-weight: bold;
+}
+/*****filtres_prefere**********************************************/
 .filtres_prefere {
   display: flex;
+  align-items: center;
 }
 .filtres {
   display: flex;
+  align-items: center;
 }
-.info {
+.filtre {
+  display: flex;
+  border: #0065fc solid 1px;
+  border-radius: 35px;
+  align-items: center;
+  margin: 10px;
+  padding: 0px 10px 0px 10px;
+}
+.cercle {
+  align-items: center;
+  margin: 10px;
+}
+/***********SECTION*********/
+#hp {
+  width: 100%;
+}
+
+#hebergements {
+  width: 70%;
   display: flex;
 }
-
-/***********SECTION*********/
-
-/***********FOOTER*********/
+.hebergement {
+  width: 40%;
+}
+aside {
+  width: 30%;
+}
+/***********FOOTER*********/ ;
