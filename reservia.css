@@ -27,7 +27,10 @@ header {
   text-decoration: none;
   padding: 20px;
 }
-a:visited {
+.ha {
+  color: black;
+}
+.ha:visited {
   color: black;
 }
 .ha:hover {
@@ -38,6 +41,27 @@ a:visited {
   color: #0065fc;
   font-weight: bold;
 }
+#recherche {
+  display: flex;
+  border: solid #f2f2f2 2px;
+  width: 300px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  justify-content: space-around;
+}
+
+#recherche i {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #f2f2f2;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*****filtres_prefere**********************************************/
 .filtres_prefere {
   display: flex;
@@ -49,24 +73,36 @@ a:visited {
 }
 .filtre {
   display: flex;
-  border: #0065fc solid 1px;
+  border: #f2f2f2 solid 3px;
   border-radius: 35px;
   align-items: center;
+  margin: 20px;
+  width: auto;
+}
+.filtre span {
   margin: 10px;
-  padding: 0px 10px 0px 10px;
+}
+.filtre i {
+  color: #0065fc;
 }
 .cercle {
+  display: flex;
   align-items: center;
-  margin: 10px;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #deebff;
 }
-/***********SECTION*********/
+/***********MAIN*********/
 #hp {
-  width: 100%;
+  display: flex;
 }
-
 #hebergements {
   width: 70%;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .hebergement {
   width: 40%;
@@ -74,4 +110,11 @@ a:visited {
 aside {
   width: 30%;
 }
-/***********FOOTER*********/ ;
+img {
+  width: 150px;
+  height: 150px;
+}
+
+/***********FOOTER*********/
+
+/** HEBERGEMENTS **/
