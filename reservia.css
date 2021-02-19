@@ -44,25 +44,43 @@ header {
 #recherche {
   display: flex;
   border: solid #f2f2f2 2px;
-  width: 300px;
+  width: 310px;
+  padding: 0px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  justify-content: space-around;
 }
 
 #recherche i {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   background-color: #f2f2f2;
-  width: 10%;
+  width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+#recherche input {
+  padding: 10px;
+  height: auto;
+  width: 141px;
+  border: none;
+  outline: none;
+}
 
-/*****filtres_prefere**********************************************/
+#recherche label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  background-color: #0065fc;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+}
+
+/*****filtres_prefere*********************/
 .filtres_prefere {
   display: flex;
   align-items: center;
@@ -94,27 +112,81 @@ header {
   border-radius: 50%;
   background-color: #deebff;
 }
+.info {
+  display: flex;
+  align-items: center;
+}
+.info span {
+  margin: 10px;
+  opacity: 0.5;
+}
+#forme i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: #f2f2f2 solid 3px;
+  background-color: white;
+  color: #0065fc;
+}
+
 /***********MAIN*********/
-#hp {
+#s1 {
   display: flex;
 }
-#hebergements {
-  width: 70%;
+#hm {
+  background-color: #f2f2f2;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  width: 70%;
+  margin-right: 5%;
+}
+#hm h2 {
+  padding: 10px;
+  margin-left: 20px;
+}
+#hebergements {
+  display: flex;
   flex-wrap: wrap;
 }
 .hebergement {
-  width: 40%;
-}
-aside {
   width: 30%;
-}
-img {
-  width: 150px;
-  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  background-color: #fff;
+  box-shadow: 1.5px 1.5px 5px 0px #8080803d;
 }
 
+.hebergement img {
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 155px;
+  border: black solid 2px;
+  object-fit: cover;
+}
+#hm a {
+  margin: 40px;
+  list-style-type: none;
+  text-decoration: none;
+}
+#hm a:visited {
+  color: black;
+}
+
+#hp {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+}
 /***********FOOTER*********/
 
-/** HEBERGEMENTS **/
+/** HEBERGEMENTS **/ ;
