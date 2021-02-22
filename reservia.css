@@ -133,9 +133,11 @@ header {
 }
 
 /***********MAIN*********/
+/*****section1****/
 #s1 {
   display: flex;
 }
+/*****hebergement a marseille ****/
 #hm {
   background-color: #f2f2f2;
   display: flex;
@@ -143,6 +145,7 @@ header {
   border-radius: 20px;
   width: 70%;
   margin-right: 5%;
+  padding: 50px;
 }
 #hm h2 {
   padding: 10px;
@@ -153,40 +156,144 @@ header {
   flex-wrap: wrap;
 }
 .hebergement {
-  width: 30%;
+  width: 29%;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
   margin: 15px;
+  margin-bottom: 30px;
   background-color: #fff;
   box-shadow: 1.5px 1.5px 5px 0px #8080803d;
+  padding: 5px;
 }
-
 .hebergement img {
   width: 100%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  height: 155px;
-  border: black solid 2px;
+  height: 150px;
   object-fit: cover;
 }
+.description {
+  margin: 20px;
+}
+.fa-star {
+  color: #0065fc;
+}
+.fa-star.grey {
+  color: grey;
+}
+
 #hm a {
-  margin: 40px;
   list-style-type: none;
   text-decoration: none;
 }
 #hm a:visited {
   color: black;
 }
-
-#hp {
-  width: 30%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  background-color: #f2f2f2;
+.plus {
+  margin-left: 30px;
+  font-weight: bold;
+  margin-top: 15px;
 }
-/***********FOOTER*********/
+/******Les plus populaires****/
+#hp {
+  width: 25%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+#tete_popu {
+  justify-content: space-between;
+  height: 20%;
+}
+#populaires {
+  height: 100%;
+}
+.populaire {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 1.5px 1.5px 5px 0px #8080803d;
+  padding: 5px;
+}
+.populaire img {
+  width: 25%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 150px;
+  object-fit: cover;
+}
+/************Activité************/
+#s2 {
+  margin-top: 200px;
+}
+.p1 {
+  margin: 20px;
+}
+.p2 {
+  display: flex;
+  height: 800px;
+}
+.p2 a {
+  list-style-type: none;
+  text-decoration: none;
+}
+.p2 a:visited {
+  color: black;
+}
+.act {
+  width: 25%;
+}
+.acti1 {
+  border-radius: 20px;
+  box-shadow: 1.5px 1.5px 5px 0px #8080803d;
+  padding: 15px;
+  margin: 10px;
+  height: 750px;
+}
+.acti2 {
+  border-radius: 20px;
+  box-shadow: 1.5px 1.5px 5px 0px #8080803d;
+  padding: 15px;
+  margin: 10px;
+  height: 355px;
+}
+.acti2 h3 {
+  height: 50%;
+}
+.acti1 img {
+  height: 95%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.acti2 img {
+  height: 90%;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+/**********footer*********/
 
-/** HEBERGEMENTS **/ ;
+footer {
+  display: flex;
+  background-color: #f2f2f2;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-top: 50px;
+}
+footer a:visited {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+}
+footer a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  margin-right: 200px;
+}
+.test {
+  list-style: none;
+  text-decoration: none;
+}
