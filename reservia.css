@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
+  align-items: center;
 }
 .logo {
   width: 8%;
@@ -45,41 +46,36 @@ header {
   display: flex;
   border: solid #f2f2f2 2px;
   width: 310px;
-  padding: 0px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  height: 50px;
+  border-radius: 10px;
 }
-
 #recherche i {
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
+  width: 20%;
   background-color: #f2f2f2;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5%;
 }
 #recherche input {
-  padding: 10px;
-  height: auto;
-  width: 141px;
+  width: 40%;
   border: none;
+  text-align: center;
+}
+#recherche input:focus {
   outline: none;
 }
-
 #recherche label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  background-color: #0065fc;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  width: 40%;
   color: white;
+  background-color: #0065fc;
+  text-align: center;
+  padding-top: 5%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
-
 /*****filtres_prefere*********************/
 .filtres_prefere {
   display: flex;
@@ -141,15 +137,15 @@ header {
 #hm {
   background-color: #f2f2f2;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   border-radius: 20px;
-  width: 70%;
-  margin-right: 5%;
-  padding: 50px;
+  width: 68%;
+  margin: 0 auto;
 }
-#hm h2 {
-  padding: 10px;
-  margin-left: 20px;
+#tete_hebe {
+  height: 50px;
+  padding: 30px;
 }
 #hebergements {
   display: flex;
@@ -158,11 +154,11 @@ header {
 .hebergement {
   width: 29%;
   border-radius: 20px;
-  margin: 15px;
-  margin-bottom: 30px;
   background-color: #fff;
   box-shadow: 1.5px 1.5px 5px 0px #8080803d;
   padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .hebergement img {
   width: 100%;
@@ -188,42 +184,57 @@ header {
 #hm a:visited {
   color: black;
 }
-.plus {
-  margin-left: 30px;
-  font-weight: bold;
-  margin-top: 15px;
-}
+
 /******Les plus populaires****/
 #hp {
-  width: 25%;
+  width: 28%;
   background-color: #f2f2f2;
   border-radius: 20px;
+  height: 900px;
   margin: 0 auto;
 }
 #tete_popu {
+  display: flex;
+  height: 50px;
+  padding: 30px;
   justify-content: space-between;
-  height: 20%;
+  align-items: center;
 }
-#populaires {
-  height: 100%;
-}
+
 .populaire {
-  width: 100%;
-  margin-bottom: 30px;
+  width: 90%;
   background-color: #fff;
+  border-radius: 20px;
   box-shadow: 1.5px 1.5px 5px 0px #8080803d;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.populaire a {
+  display: flex;
+  height: 100%;
   padding: 5px;
 }
 .populaire img {
-  width: 25%;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 150px;
+  width: 40%;
+  height: 200px;
   object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
+#hp a {
+  text-decoration: none;
+  color: black;
+}
+.description_pop {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 /************Activité************/
 #s2 {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 .p1 {
   margin: 20px;
@@ -245,29 +256,31 @@ header {
 .acti1 {
   border-radius: 20px;
   box-shadow: 1.5px 1.5px 5px 0px #8080803d;
-  padding: 15px;
   margin: 10px;
   height: 750px;
+}
+.acti1 h3 {
+  margin: 20px;
 }
 .acti2 {
   border-radius: 20px;
   box-shadow: 1.5px 1.5px 5px 0px #8080803d;
-  padding: 15px;
   margin: 10px;
-  height: 355px;
+  height: 370px;
+  align-items: center;
 }
 .acti2 h3 {
-  height: 50%;
+  margin-left: 20px;
 }
 .acti1 img {
-  height: 95%;
+  height: 92%;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   object-fit: cover;
 }
 .acti2 img {
-  height: 90%;
+  height: 85%;
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -278,9 +291,9 @@ header {
 footer {
   display: flex;
   background-color: #f2f2f2;
-  padding-top: 100px;
-  padding-bottom: 100px;
   margin-top: 50px;
+  padding: 50px;
+  width: 100%;
 }
 footer a:visited {
   color: black;
@@ -291,9 +304,14 @@ footer a {
   list-style: none;
   text-decoration: none;
   color: black;
-  margin-right: 200px;
 }
 .test {
   list-style: none;
   text-decoration: none;
+}
+.test li {
+  margin-bottom: 20px;
+}
+footer div {
+  margin-right: 300px;
 }
