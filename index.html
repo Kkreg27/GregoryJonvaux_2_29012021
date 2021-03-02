@@ -7,26 +7,32 @@
     <title>Réservia</title>
     <link rel="stylesheet" href="reservia.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-        * {
-            font-family: 'Roboto', sans-serif;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <div id="logo_menu">
-            <img src="logo.png" alt="logo" class="logo" />
-            <nav>
-                <ul class="menu">
-                    <li><a href="#hm" class="ha">Hébergements</a></li>
+            <div>
+                <img src="logo.png" alt="logo" class="logo" />
+            </div>
+
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#hm" class="he">Hébergements</a></li>
                     <li><a href="#s2" class="ha">Activités</a></li>
+                </ul>
+            </nav>
+
+
+            <nav class="inscription">
+                <ul>
                     <li><a href="#Sinscrire" class="Sinscrire">S'inscrire</a></li>
                 </ul>
             </nav>
+
+        </div>
         </div>
 
         <div id="slogan">
@@ -36,8 +42,8 @@
 
         <div id="recherche">
             <i class="fas fa-map-marker-alt"></i>
-            <input class="bold" type="text" />
-            <label for="Recherche" class="bold">Rechercher</label>
+            <input type="text" placeholder="Marseille, France" />
+            <button type="submit" for="Recherche">Rechercher</button>
         </div>
 
         <div class="filtres_prefere">

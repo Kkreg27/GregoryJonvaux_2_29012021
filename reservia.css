@@ -1,51 +1,54 @@
 /**********BODY*************/
-* {
-  font-family: "Roboto";
-}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
+* {
+  font-family: "Raleway", "Sans serif";
+}
 /***********HEADER*********/
 header {
-  padding-left: 10px;
+  margin-left: 20px;
 }
-
 /*****logo_menu*********************************/
 #logo_menu {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
-  align-items: center;
+  margin-top: 20px;
 }
 .logo {
-  width: 8%;
-  height: 8%;
+  width: 175px;
 }
-.menu {
+#mi {
   display: flex;
-  list-style-type: none;
+}
+.menu ul {
+  display: flex;
+  list-style: none;
 }
 .menu a {
-  margin-right: 50px;
+  margin-right: 100px;
   text-decoration: none;
-  padding: 20px;
-}
-.ha {
   color: black;
 }
-.ha:visited {
-  color: black;
-}
-.ha:hover {
+.menu a:hover {
   color: #0065fc;
-  border-top: #0065fc solid 2px;
+  border-top: #0065fc 2px solid;
+  padding-top: 20px;
+}
+.inscription {
+  margin-right: 50px;
+  margin-left: 0%;
+  list-style: none;
 }
 .Sinscrire {
   color: #0065fc;
   font-weight: bold;
+  text-decoration: none;
+  margin-left: -20px;
 }
 #recherche {
   display: flex;
   border: solid #f2f2f2 2px;
-  width: 310px;
+  width: 28%;
   height: 50px;
   border-radius: 10px;
 }
@@ -56,25 +59,33 @@ header {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   font-size: 20px;
-  text-align: center;
-  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #recherche input {
   width: 40%;
   border: none;
   text-align: center;
+  font-weight: bold;
 }
 #recherche input:focus {
   outline: none;
 }
-#recherche label {
+#recherche button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40%;
   color: white;
   background-color: #0065fc;
-  text-align: center;
-  padding-top: 5%;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+#recherche button:focus {
+  outline: none;
 }
 /*****filtres_prefere*********************/
 .filtres_prefere {
@@ -93,6 +104,17 @@ header {
   margin: 20px;
   width: auto;
 }
+.cercle :hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+}
+
 .filtre span {
   margin: 10px;
 }
@@ -314,4 +336,94 @@ footer a {
 }
 footer div {
   margin-right: 300px;
+}
+
+@media all and (max-width: 768px) {
+  /*****logo menu******/
+  header {
+    margin-top: 40px;
+    position: relative;
+  }
+  #logo_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo {
+    width: 30%;
+  }
+  #mi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+  }
+  .menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /* margin-left: -60px;*/
+    justify-content: space-around;
+  }
+  .menu li {
+    width: 50%;
+    display: flex;
+  }
+  .menu a {
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+  .menu li:hover {
+    color: #0065fc;
+    border-bottom: #0065fc solid 2px;
+  }
+  .menu a:hover {
+    color: #0065fc;
+    border-top: none;
+    padding-top: 0;
+  }
+  .inscription {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .inscription li {
+    list-style: none;
+    text-decoration: none;
+  }
+  /*********Filtres********/
+  #recherche {
+    width: 80%;
+  }
+  .filtres_prefere {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtres {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  /*******Section 1******/
+  #s1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #hp {
+    width: 100%;
+  }
+  #hm {
+    width: 100%;
+  }
+  #hebergements {
+    width: 100%;
+    flex-direction: column;
+  }
+  .hebergement {
+    width: 80%;
+  }
 }
