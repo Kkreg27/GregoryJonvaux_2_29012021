@@ -23,6 +23,8 @@ header {
 .menu ul {
   display: flex;
   list-style: none;
+  padding: 0;
+  width: 100%;
 }
 .menu {
   display: flex;
@@ -254,7 +256,7 @@ header {
   padding: 5px;
 }
 .populaire img {
-  width: 40%;
+  width: 160px;
   height: 200px;
   object-fit: cover;
   border-top-left-radius: 20px;
@@ -265,7 +267,8 @@ header {
   color: black;
 }
 .description_pop {
-  margin-left: 20px;
+  width: 50%;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -331,7 +334,6 @@ footer {
   background-color: #f2f2f2;
   margin-top: 50px;
   padding: 50px;
-  width: 100%;
 }
 footer a:visited {
   color: black;
@@ -497,10 +499,87 @@ footer div {
   footer {
     display: flex;
     flex-direction: column;
-    width: auto;
+
     padding: 0;
   }
   footer div {
     margin-right: 0px;
+  }
+}
+@media all and (max-width: 952px) {
+  .filtres_prefere {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #recherche {
+    width: 50%;
+    margin: 0;
+  }
+  .populaire {
+    width: 80%;
+  }
+  .populaire a {
+    display: flex;
+    flex-direction: column;
+  }
+  .populaire a img {
+    height: 200px;
+  }
+  .populaire img {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+  .description_pop {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    justify-content: none;
+  }
+  .description_pop .etoile {
+    display: flex;
+  }
+  .description_pop h3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .hebergement img {
+    height: 200px;
+  }
+  footer {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer div {
+    margin-right: 0px;
+  }
+  ul.test {
+    padding: 0;
+    margin: 0;
+  }
+  .hebergement {
+    width: 45%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .acti1 {
+    height: 510px;
+  }
+  .acti1 img {
+    height: 400px;
+  }
+  .acti2 {
+    height: 250px;
+  }
+  .acti2 img {
+    height: 170px;
   }
 }
